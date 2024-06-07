@@ -1,0 +1,294 @@
+/* Variables */
+:root{
+    --main-color: ;
+    --footer-bg: #242424;
+    --socials-ico-bg: rgba(255, 255, 255, .2)
+}
+
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    /* line-height: 1.5; */
+    min-height: 100vh;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+/* Header */
+/* .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    /* display: flex;
+    justify-content: space-between; */
+    /* background: rgba(1, 9, 44, 0.486);
+    padding: .5rem;
+    z-index: 100; */
+/* } */
+
+/* .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+} */
+
+.wrap-header{
+    /* max-width: 1800px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    background-color: #24242483;
+}
+
+/* .log i{
+    color: white;
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.log a{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 3px;
+} */ 
+
+/* .log span{
+    color:white;
+    font-size: 1.5rem;
+} */
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    /* display: flex;
+    align-items: center; */
+    scale: 1;
+    max-width: 300px;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* .wrap-nav{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    max-width: fit-content;
+    width: 100%;
+} */
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px 0;
+    margin: 0 15px;
+    transition: all .5s ease;
+}
+
+
+.nav-links a:hover{
+    color: #0ff
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.login a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 25px;
+    margin-left: 10px;
+    color: white;
+    transition: all .5s ease;
+}
+
+.login a:not(:first-child):hover{
+    color: #0ff;
+}
+
+.login a.active{
+    /* height: 50px;
+    width: 100px; */
+    padding: 15px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #242424;
+    background-color: #0ff;
+}
+
+.login a.active i{
+    margin-right: 7px;
+}
+
+/* .login a.active i:hover{
+    color: #0ff;
+} */
+
+.login a.active:hover{
+    background-color: rgb(200, 253, 253);
+}
+
+
+
+/* .nav-links li a{
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover{
+    color: aqua;
+} */
+
+/* Hero */
+.hero{
+    height: 100vh;
+    background: url(/assets/wotlk-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(25, 25, 68, 0.815);
+    background-blend-mode: color-burn;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Footer */
+.footer{
+    background-color: var(--footer-bg);
+    padding: 70px 0;
+}
+
+.wrap-footer{
+    max-width: 1170px;
+    /* background-color: red; */
+    margin: auto;
+    }
+    
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h2{
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.footer-col h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #0ff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 10px;
+}
+
+.footer-col .socials a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--socials-ico-bg);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer-col .socials a:hover{
+    scale: 1.1;
+    color: var(--footer-bg);
+    background-color: white;
+}
+
+/* Responsive */
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
