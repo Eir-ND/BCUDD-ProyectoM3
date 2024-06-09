@@ -56,12 +56,12 @@ ul, li{
 } */
 
 .wrap-header{
-    /* max-width: 1800px;
-    height: 200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; */
+    /* max-width: 1800px; */
+    height: 100px;
+    /* margin: auto; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
     position: fixed;
     width: 100%;
     top: 0;
@@ -102,9 +102,10 @@ ul, li{
     /* display: flex;
     align-items: center; */
     scale: 1;
-    max-width: 300px;
+    max-width: 150px;
     /* height: auto; */
     cursor: pointer;
+    /* padding-top: 50px; */
 }
 
 /* .wrap-nav{
@@ -154,7 +155,7 @@ ul, li{
 .login a.active{
     /* height: 50px;
     width: 100px; */
-    padding: 15px 15px;
+    padding: 7px 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -171,7 +172,7 @@ ul, li{
 } */
 
 .login a.active:hover{
-    background-color: rgb(200, 253, 253);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -194,9 +195,66 @@ ul, li{
     background-size: cover;
     background-color: rgba(25, 25, 68, 0.815);
     background-blend-mode: color-burn;
-    display: flex;
-    align-items: center;
+    background: linear-gradient();
+    /* display: flex;
+    align-items: center; */
+    color: #f0f0f0;
+    padding: 70px;
 }
+
+.wrap-hero{
+    max-width: 1200px;
+    margin: auto;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+
+}
+
+.wrap-hero h1{
+    text-transform: uppercase;
+    /* display: grid; */
+    /* align-items: center; */
+    margin-bottom: 50px;
+}
+
+#video-wotlk{
+    width: 100%;
+}
+
+.wrap-quote{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    backdrop-filter: blur(0px 10px);
+}
+
+.wrap-quote p{
+    text-transform: capitalize;
+}
+
+.wrap-quote q{
+    font-style: italic;
+    font-size: 28px;
+    /* margin-bottom: 100px; */
+}
+
+.wrap-quote span{
+    text-transform: capitalize;
+}
+/* .wrap-quote q::first-letter{
+    text-transform: uppercase;
+} */
+
+/* .quote::first-letter{
+    text-transform: uppercase;
+} */
+
+
+
 
 /* Section */
 
