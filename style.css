@@ -26,6 +26,7 @@ ul, li{
     list-style: none;
 }
 
+/* Header */
 .wrap-header{
     height: 100px;
     position: fixed;
@@ -136,6 +137,9 @@ ul, li{
 
 .main-desc{
     margin-bottom: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .video{
@@ -218,6 +222,11 @@ ul, li{
     cursor: pointer;
     outline: 0px;
     text-transform: capitalize;
+    transition: all .3s ease;
+}
+
+.btn-sub:hover{
+    background: rgb(0, 136, 136);
 }
 
 
@@ -254,7 +263,7 @@ ul, li{
     filter: drop-shadow(
         0 0 10px rgba(0, 255, 255, 0.8)
     );
-    padding-right: 15px;
+    padding-right: 5px;
 }
 
 .class{
@@ -475,10 +484,110 @@ ul, li{
 }
 
 /* Responsive */
+@media(max-width: 1200px){
+    .classes-col{
+        flex-wrap: wrap;
+    }
+
+    .arthas{
+        display: none;
+    }
+}
+
 @media(max-width: 767px){
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
+    }
+
+    .nav-links a{
+        padding: 0;
+        margin: 0 10px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .login a{
+        font-size: 1rem;
+        margin: 0px 0px;
+        font-weight: 400;
+    }
+
+    .login a.active{
+        margin-right: 5px;
+    }
+
+    .hero{
+        overflow: hidden;
+        height: auto;
+    }
+
+    .wrap-hero{
+        grid-template-areas:
+            " . . . . . . . . . ."
+            " a a a a a a a a a a"
+            " a a a a a a a a a a"
+            " b b b b b b b b b b"
+            " b b b b b b b b b b"
+            " . . . . . . . . . .";
+    }
+
+    .item-hero{
+        grid-area: a;
+        text-align: center;
+    }
+
+    .item-hero h1{
+        font-size: 30px;
+        margin: 20px 0px
+    }
+
+    .item-hero p{
+        text-align: center;
+    }
+
+    .video{
+        grid-area: b;
+    }
+
+    .main-desc{
+        margin-bottom: 30px;
+    }
+
+    .sub-news{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .classes-col{
+        flex-direction: column;
+    }
+
+    .wrap-clases-pj{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrap-classes-pj h1{
+        margin-top: 20px;
+    }
+
+    .class{
+        width: 85%;
+    }
+
+    .wrap-clases-col{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media(max-width: 670px){
+    .wrap-quote q{
+        font-size: 23px;
     }
 }
 
